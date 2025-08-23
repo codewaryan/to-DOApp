@@ -1,0 +1,14 @@
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\config\WebConfig.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\controller\TaskController.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\dto\ApiResponse.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\dto\TaskRequest.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\dto\TaskResponse.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\entity\Task.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\exception\ApiError.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\exception\GlobalExceptionHandler.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\exception\NotFoundException.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\exception\ResourceNotFoundException.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\repository\TaskRepository.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\service\TaskService.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\service\TaskServiceImpl.java
+C:\Users\aryan.pal\Downloads\Smart-To-Do-List\Smart-To-Do-List\src\main\java\com\smartTo_doList\Smart_To_Do_List\SmartToDoListApplication.java

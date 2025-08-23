@@ -1,0 +1,16 @@
+com\smartTo_doList\Smart_To_Do_List\config\WebConfig$1.class
+com\smartTo_doList\Smart_To_Do_List\exception\ApiError.class
+com\smartTo_doList\Smart_To_Do_List\controller\TaskController.class
+com\smartTo_doList\Smart_To_Do_List\SmartToDoListApplication.class
+com\smartTo_doList\Smart_To_Do_List\dto\ApiResponse.class
+com\smartTo_doList\Smart_To_Do_List\service\TaskService.class
+com\smartTo_doList\Smart_To_Do_List\dto\TaskRequest.class
+com\smartTo_doList\Smart_To_Do_List\entity\Task.class
+com\smartTo_doList\Smart_To_Do_List\service\TaskServiceImpl.class
+com\smartTo_doList\Smart_To_Do_List\repository\TaskRepository.class
+com\smartTo_doList\Smart_To_Do_List\entity\Task$Priority.class
+com\smartTo_doList\Smart_To_Do_List\config\WebConfig.class
+com\smartTo_doList\Smart_To_Do_List\exception\NotFoundException.class
+com\smartTo_doList\Smart_To_Do_List\exception\ResourceNotFoundException.class
+com\smartTo_doList\Smart_To_Do_List\dto\TaskResponse.class
+com\smartTo_doList\Smart_To_Do_List\exception\GlobalExceptionHandler.class
