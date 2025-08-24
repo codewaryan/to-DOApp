@@ -1,26 +1,26 @@
-# Use an official JDK runtime as base image
 # Use Java 21 runtime
 FROM eclipse-temurin:21-jdk AS build
 
-# Set working directory inside container
+# Set working directory
 WORKDIR /app
 
-# Copy Maven wrapper and pom.xml first (for dependency caching)
+# Copy Maven wrapper and pom.xml for caching
 COPY mvnw .
 COPY .mvn .mvn
 COPY pom.xml .
 
-# Download dependencies (will be cached unless pom.xml changes)
+# Download dependencies
 RUN ./mvnw dependency:go-offline
 
 # Copy source code
 COPY src src
 
-# Package the application
+# Build the JAR
 RUN ./mvnw clean package -DskipTests
 
-# Expose port (Render sets PORT dynamically, so this is optional for docs)
+# Expose port (optional)
 EXPOSE 8080
 
-# Run the app (Render provides $PORT env variable)
-ENTRYPOINT ["java","-jar","target/*.jar","--server.port=${PORT}"]
+# Run the app using Render's $PORT
+ENV PORT 8080
+CMD java -jar target/Smart-To-Do-List-0.0.1-SNAPSHOT.jar --server.port=$PORT
