@@ -6,6 +6,8 @@ import com.smartTo_doList.Smart_To_Do_List.dto.TaskRequest;
 import com.smartTo_doList.Smart_To_Do_List.dto.TaskResponse;
 import com.smartTo_doList.Smart_To_Do_List.entity.Task;
 import com.smartTo_doList.Smart_To_Do_List.service.TaskService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,11 +39,12 @@ public class TaskController {
     }
 
     @GetMapping
-    public List<TaskResponse> findAll(
+    public Page<TaskResponse> findAll(
             @RequestParam(required = false) Boolean completed,
-            @RequestParam(required = false) Task.Priority priority
+            @RequestParam(required = false) Task.Priority priority,
+            Pageable pageable
     ) {
-        return service.findAll(completed, priority);
+        return service.findAll(completed, priority, pageable);
     }
 
     @GetMapping("/{id}")

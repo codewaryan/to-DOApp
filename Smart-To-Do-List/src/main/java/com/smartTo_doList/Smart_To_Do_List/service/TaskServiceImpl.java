@@ -6,6 +6,8 @@ import com.smartTo_doList.Smart_To_Do_List.dto.TaskResponse;
 import com.smartTo_doList.Smart_To_Do_List.entity.Task;
 import com.smartTo_doList.Smart_To_Do_List.exception.ResourceNotFoundException;
 import com.smartTo_doList.Smart_To_Do_List.repository.TaskRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,15 +31,15 @@ public class TaskServiceImpl implements TaskService {
         return toDto(repo.save(t));
     }
 
-    @Override
-    @Transactional(readOnly = true)
-    public List<TaskResponse> findAll(Boolean completed, Task.Priority priority) {
-        // Basic filtering without overcomplicating repositories
-        return repo.findAll().stream()
-                .filter(t -> completed == null || t.isCompleted() == completed)
-                .filter(t -> priority == null || t.getPriority() == priority)
+
+    public Page<TaskResponse> findAll(Boolean completed, Task.Priority priority, Pageable pageable) {
+        Page<Task> page = repo.findAll(pageable);
+        List<TaskResponse> filtered = page.stream()
                 .map(this::toDto)
+                .filter(dto -> (completed == null || dto.isCompleted() == completed) &&
+                        (priority == null || dto.getPriority().equals(priority.name())))
                 .toList();
+        return new org.springframework.data.domain.PageImpl<>(filtered, pageable, page.getTotalElements());
     }
 
     @Override

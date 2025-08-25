@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.smartTo_doList.Smart_To_Do_List.SmartToDoListApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.951 s -- in com.smartTo_doList.Smart_To_Do_List.SmartToDoListApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.23 s -- in com.smartTo_doList.Smart_To_Do_List.SmartToDoListApplicationTests
